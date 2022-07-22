@@ -9,7 +9,6 @@ RUN apt-get update && \
   neofetch \
   ffmpeg \
   wget \
-  pm2  \
   chromium \ 
   imagemagick && \
   rm -rf /var/lib/apt/lists/*
@@ -20,4 +19,4 @@ RUN set -x \
 
 EXPOSE 8080
 
-CMD ["pm2", "start", "node", "."]`
+CMD ["node", "."]`
